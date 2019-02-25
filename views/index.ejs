@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>test 網站</title>
+	<link rel="stylesheet" href="/stylesheets/jquery-ui.min.css">
+	<link rel="stylesheet" href="/stylesheets/jquery.dataTables.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel="stylesheet" href="/stylesheets/common.css">
+  </head>
+  <body>
+    <div class='content'>
+		<h1>test 網站</h1>
+		<p></p>
+		<div>
+		  <label for="sendFrom">發送來源:</label>
+		  <input type="text" name="sendFrom" id="sendFrom" style="width:400px"/>
+		</div>
+		<br><div>
+		  <span>發送對象:</span>
+		  <input type="text" name="sendWho" id="sendWho" style="width:400px"/>
+		</div>
+		<br><div>
+		  <span>使用圖片:</span>
+		  <input type="text" name="useImage" id="useImage" style="width:400px"/>
+		</div>
+		<br><div>
+		  <span>預覽圖片:</span>
+		  <img name="preImage" id="preImage" src(unknown) style="width:200px" />
+		</div>
+		<br><div class="button-container">
+		  <span>圖片比例:</span>
+		  <input type="checkbox" name="useImage" id="imageType" checked="true"/>
+		  1:1.51
+		  <input type="checkbox" name="useImage" id="imageType" />
+		  1:1
+		</div>
+		<br><div>
+		  <span>文案標題:</span>
+		  <input type="text" name="textTitle" id="textTitle" style="width:200px"/>
+		</div>
+		<br><div>
+		  <span>文案內容:</span>
+		  <textarea style="width:200px"></textarea>
+		</div>
+		<br><div class='button'>
+		   <div class='button-container'>
+		   <span>使用按鈕:</span>
+			  <br><div>
+				  <span>按鈕文字:</span>
+				  <input type="text" name="buttontext" id="buttontext" />
+			  </div>
+			  <br><div>
+				  <span>按鈕連結:</span>
+				  <input type="text" name="buttonlink" id="buttonlink" />
+			  </div>
+			  <input type="button" id="remove" name="remove" value="移除" onclick="Remove()">
+		   </div>
+		  <br><input type="button" id="send" name="send" value="發送" onclick="Send()">
+		</div>
+		<script>
+		</script>
+	</div>
+  </body>
+</html>
